@@ -26,3 +26,40 @@ register_nav_menus(
             
     )
     );
+
+function bl_header_customize($wp_customize){
+ $wp_customize->add_section('bl-header-section', array(
+     'title' => 'Header Text'
+ ));
+ $wp_customize->add_setting('bl-header-headline', array(
+     'default' => 'example header'
+ ));
+ $wp_customize->add_control( new WP_Customize_Control($wp_customize, 'bl-header-headline-control', array(
+    'label' => 'Headline',
+    'section' => 'bl-header-section',
+    'settings' => 'bl-header-headline'
+ )));
+
+$wp_customize->add_setting('bl-header-text', array(
+    'default' => 'example text'
+));
+$wp_customize->add_control( new WP_Customize_Control($wp_customize, 'bl-header-text-control', array(
+   'label' => 'text',
+   'section' => 'bl-header-section',
+   'settings' => 'bl-header-text', 
+   'type' => 'textarea'
+)));
+
+
+$wp_customize->add_setting('bl-header-image');
+$wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'bl-header-image', array(
+   'label' => 'Image',
+   'section' => 'bl-header-section',
+   'settings' => 'bl-header-image', 
+   'width' => 1920,
+   'height' => 500
+)));
+}
+
+
+add_action('customize_register', 'bl_header_customize');
