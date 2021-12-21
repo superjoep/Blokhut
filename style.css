@@ -1,3 +1,12 @@
+/*
+Theme Name: Blokhut THeme
+Author: Joep de Kock
+Author URI: https://wordpress.org/
+Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+*/
+
+
 @font-face {
     font-family: OpenSansLight;
     src: url(Fonts/OpenSans-Light.ttf);
@@ -21,7 +30,6 @@
 
 .navbar ul li{
     padding: 8px 30px;
-
 }
 .navbar ul {
 margin-right: 10%;
@@ -40,7 +48,8 @@ margin-right: 10%;
 }
 .MainPageImage{
     width: 100%;
-    height: 70%;
+    height: 70vh;
+    min-height: 500px;
     position: absolute;
     filter: blur(8px);
     -webkit-filter: blur(8px) brightness(50%);
@@ -58,21 +67,21 @@ margin-right: 10%;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.header-section{
+    height: 30%;
+}
 .header_text_props{
-    margin-top: 9%;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 75%;
-    
+    padding-top: 7%;
     color: #09A603;
 }
-.navbar-nav{
-    font-family: OpenSansBold;
-    
-}
+
 .navbar-light{
     box-shadow: 0px 3px 7px;
     z-index: 20;
+    font-family: OpenSansBold;
 }
 
 .maintitle{
@@ -86,9 +95,9 @@ margin-right: 10%;
     font-size: 60px;
     text-shadow: 2px 0px 6px black;
     color:white;
-    margin-top: 90px;
+    margin-top: 100px;
+    
 }
-
 
 .TypeTextShort{
     margin-top: 30px;
@@ -106,6 +115,7 @@ margin-right: 10%;
     width: 150px;
     height: 45px;
     border-width: 0px;
+    padding-top: 10px;
     
 }
 .btn-primary:hover{
@@ -120,9 +130,75 @@ margin-right: 10%;
     height: 45px;
     border-width: 0px;
     color: #09A603;
-    
+    padding-top: 10px;
 }
 .btn-secondary:hover{
     background-color: #09A603;
     color:white;
+}
+
+.container-fluid{
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+}
+
+.textfield_Style{
+    font-family: OpenSansMedium !important;
+    font-size: 14px !important;
+    color: black;
+}
+.Main-text-header{
+    font-family: OpenSansExtraBold;
+    font-size: 23px;
+    color: black;
+}
+.Main-Page-header{
+    font-family: OpenSansExtraBold;
+    font-size: 30px;
+    color: black;
+}
+
+ @media only screen and (max-width: 600px) {
+    .TypeTextShort{
+        font-size: 14px;
+    }
+}
+.Main-info-section{
+    padding-top: 5%;
+}
+.Nieuws-section{
+    margin-top: 7%;
+    background-color: #EFEFEF;
+}
+.Nieuws-section-items{
+    padding-top:2%;
+    padding-bottom:5%;
+}
+.row{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.btn-link{
+    text-decoration: none;
+    color: black;
+    font-family: OpenSansSemiBold;
+}
+.Main-faq-section{
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+.card-size{
+    width: 100%;
+}
+.shadow-1-strong{
+    box-shadow: 0px 3px 7px;
+}
+.box-info{
+    padding-right: 3%;
+}
+.Main-info-page{
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
