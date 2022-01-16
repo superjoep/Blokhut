@@ -39,7 +39,7 @@
         />
       </div>
 
-      <div class="col-md-4 p-5">
+      <div class="col-md-4 box-front-info">
         <h2 class="Main-text-header">Wat is de blokhut?</h2></br>
         <p class="textfield_Style"><?php echo get_theme_mod('bl-Main-text')?></p>
       </div>

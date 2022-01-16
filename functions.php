@@ -178,6 +178,35 @@ $wp_customize->add_setting('bl-Information-text', array(
    'settings' => 'bl-Information-text', 
    'type' => 'textarea'
  )));
+
+ //info images
+//image 1
+$wp_customize->add_setting('bl-info-image');
+$wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'bl-info-image', array(
+   'label' => 'Main description image 1',
+   'section' => 'bl-Information-section',
+   'settings' => 'bl-info-image', 
+   'width' => 400,
+   'height' => 270
+)));
+//image 2
+$wp_customize->add_setting('bl-info-image2');
+$wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'bl-info-image2', array(
+   'label' => 'Main description image 2',
+   'section' => 'bl-Information-section',
+   'settings' => 'bl-info-image2', 
+   'width' => 210,
+   'height' => 300
+)));
+//image 3
+$wp_customize->add_setting('bl-info-image3');
+$wp_customize->add_control( new WP_Customize_Cropped_Image_Control($wp_customize, 'bl-info-image3', array(
+   'label' => 'Main description image 3',
+   'section' => 'bl-Information-section',
+   'settings' => 'bl-info-image3', 
+   'width' => 420,
+   'height' => 300
+)));
 }
 
 

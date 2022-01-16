@@ -29,10 +29,10 @@ Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-me
   }
 
 .navbar ul li{
-    padding: 8px 30px;
+    padding: 8px 25px;
 }
 .navbar ul {
-margin-right: 10%;
+margin-right: 5%;
 }
 .navbar ul a{
     text-decoration: none;
@@ -90,12 +90,14 @@ margin-right: 10%;
     text-shadow: 2px 0px 6px black;
 }
 .PageTitle{
-    position: absolute;
+    position: relative;
     font-family: OpenSansExtraBold;
     font-size: 60px;
     text-shadow: 2px 0px 6px black;
     color:white;
     margin-top: 100px;
+    text-align: center;
+
     
 }
 
@@ -201,4 +203,54 @@ margin-right: 10%;
 .Main-info-page{
     padding-top: 8%;
     padding-bottom: 8%;
+}
+.box-front-info{
+    padding-left: 3%;
+}
+.Main-agenda-page{
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.agenda{
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px;
+    font-family: OpenSansMedium !important;
+}
+.wpcf7-textarea{
+width: 400px;
+margin-top: 30px;
+}
+
+.wpcf7 input{
+    margin-top: 30px;
+    }
+#naamtext{
+    margin-top: 0px;
+}
+.Main-info-post{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: OpenSansMedium !important;
+}
+.date{
+    font-size: 15px;
+    color: gray;
+}
+input[type="submit"]
+{
+    color: white;
+    font-family: OpenSansSemiBold;
+    background-color: #09A603;
+    border-radius: 37px 37px 37px 37px;
+    width: 150px;
+    height: 45px;
+    border-width: 0px;
+    padding-top: 0px;
+    margin-top: -0.5%;
+}
+input[type="submit"]:hover
+{
+    background-color: #c9bebe;
+    color:#09A603;
+    
 }
